@@ -1,0 +1,105 @@
+body {
+  background-color: #8062D6
+}
+
+.Main--Ball {
+  width: 470px;
+  height: 470px;
+  background-color: black;
+  border-radius: 470px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+
+
+
+
+}
+
+.Main--BallMiddle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0px 0px -150px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.Main--Input {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid white;
+
+}
+
+.Main--Submit {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 15px;
+  border: white;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-52%, -53%) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-54%, -51%) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(-48%, -49%) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(-49%, -52%) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-52%, -49%) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-54%, -49%) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(-48%, -50%) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-52%, -52%) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(-48%, -47%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -53%) rotate(-1deg);
+  }
+}
+
+.animate {
+  animation: 0.5s shake;
+  animation-iteration-count: 2
+}
